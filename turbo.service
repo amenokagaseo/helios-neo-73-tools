@@ -1,0 +1,12 @@
+[Unit]
+Description=HID Raw Keyboard Listener
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/opt/keyboard/hidraw
+Restart=always
+RestartSec=1
+
+[Install]
+WantedBy=multi-user.target
